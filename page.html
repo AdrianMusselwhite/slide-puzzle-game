@@ -1,0 +1,44 @@
+<!-- Adrian Musselwhite -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slide Puzzle</title>
+
+<link rel = "stylesheet" href = "style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+</head>
+<body>
+
+<h1 id = "mainheader">Slide Puzzle</h1>
+
+<div class = "puzzleboard">
+    <div class = "gridsquares" id = "1">1</div>
+    <div class = "gridsquares">2</div>
+    <div class = "gridsquares">3</div>
+    <div class = "gridsquares">4</div>
+    <div class = "gridsquares">5</div>
+    <div class = "gridsquares">6</div>
+    <div class = "gridsquares">7</div>
+    <div class = "gridsquares">8</div>
+</div>
+
+<div class = scoreContainer>
+    <div id = "movesScore" style="flex-grow: 1;">Moves: 0</div>
+    <button id = "resetButton">Reset</button>
+    <button id = "solveButton">Solve</button>
+</div>
+
+<div id = "winScreen" class = "winScreen">
+    <h2 id = "win">Solved!</h2>
+    <button type = "button" id = "playAgain" onclick="playAgain()">Play Again</button>
+</div>
+
+<script type="text/javascript" src="application.js" charset="utf-8"></script>
+
+</body>
+</html>
