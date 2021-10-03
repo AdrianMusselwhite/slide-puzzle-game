@@ -1,0 +1,305 @@
+/* Adrian Musselwhite */
+
+/* Background colour */
+body {
+
+    background-color: #f0e9db;
+
+}
+
+/* Main header */
+#mainheader {
+
+    color:#5c5c5c;    
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 10vh;
+    letter-spacing: 2px;
+    margin-top: 2%;
+    
+}
+
+/* Puzzle Board Container */
+.puzzleboard {
+
+    background-color: #7a756e;
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+
+    margin: 10vh auto auto auto;
+
+    box-sizing: border-box;
+
+    padding: 20px;
+    gap: 20px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #635f59;
+
+}
+
+/* Tiles on gameboard */
+.gridsquares {
+
+    position: initial;
+
+    background-color: #a6a39a;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gridsquares:hover {
+
+    cursor: pointer;
+
+}
+
+/* Score board container */
+.scoreContainer {
+
+    background-color: #a69e94;
+    position: relative;
+
+    display: flex;
+    
+    width: 500px;
+    height: 40px;
+
+    margin: 20px auto auto auto;
+
+    padding: 20px;
+
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #837c74;
+
+}
+
+/* Moves count in scoreboard container */
+#movesScore {
+
+    border-radius: 5px;
+
+    font-size: 30px;
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#resetButton {
+
+    color: white;
+
+    font-size: 20px;
+
+    padding: 10px 20px;
+
+    margin-right: 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #30974c;
+
+}
+
+#solveButton {
+
+    color: white;
+
+    font-size: 20px;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #33427e;
+
+}
+
+#resetButton:hover {
+
+    opacity: 80%;
+    
+}
+
+#solveButton:hover {
+
+    opacity: 80%;
+
+}
+
+/* Winscreen after puzzle is solved */
+.winScreen {
+    
+    position: absolute;
+
+    box-sizing: border-box;
+  
+    top: 30%;
+    left: 50%;
+
+    width: 600px;
+    height: 300px;
+
+    margin-left: -300px;
+    margin-right: -300px;
+   
+    background-color: #30974c;
+
+    border-radius: 10px;
+
+
+    display: none;
+    
+    transition: all 0.5s linear;
+    opacity: 0; 
+
+    border-style: solid;
+    border-width: 4px;
+    border-color: #257c3d;
+
+}
+
+/*
+visable and visableVisual are used for
+fading the win message in and out 
+*/
+.visable {
+
+    display: block;
+
+}
+
+.visableVisual {
+
+    opacity: 100;
+
+}
+
+#win {
+
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 10vh;
+
+}
+
+/* Play again button */
+#playAgain {
+
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+
+    transform: translateX(-50%);
+    background-color: rgb(250, 201, 41);
+
+    font-size: 20px;
+
+    padding: 10px 20px;
+
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+
+}
+
+#playAgain:hover {
+
+    cursor: pointer;
+    background-color: rgb(248, 211, 90);
+
+}
+
+
+@media only screen and (max-width: 620px) {
+    
+    #mainheader {
+
+        font-size: 8vh;
+
+    }
+
+    .puzzleboard {
+
+        width: 90vw;
+        height: 90vw;
+        
+        gap: 3.5vw;
+        padding: 3.5vw;
+
+    }
+
+    .gridsquares {
+
+        font-size: 16vw;
+
+    }
+
+    .scoreContainer {
+
+        display: flex;
+        
+        width: 80vw;
+        height: 40px;
+
+    }
+
+    #resetButton {
+    
+        font-size: 18px;
+    
+        padding: 5px 10px;
+    
+        margin-right: 8px;
+
+    }
+    
+    #solveButton {
+    
+        font-size: 18px;
+    
+        padding: 5px 10px;
+    
+    }
+
+    #movesScore {
+
+        font-size: 25px;
+        padding-top: 5px;
+
+    }
+
+    .winScreen {
+    
+        top: 20%;
+        left: 3%;
+    
+        width: 94%;
+        height: 300px;
+    
+        margin-left: 0px;
+        margin-right: 0px;
+       
+    }
+}
