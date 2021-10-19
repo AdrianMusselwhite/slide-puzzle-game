@@ -16,7 +16,19 @@ body {
     font-size: 10vh;
     letter-spacing: 2px;
     margin-top: 2%;
+    margin-bottom: 0px;
     
+}
+
+/* Instruction header */
+#instruction {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5vh;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 0px;
+
 }
 
 /* Puzzle Board Container */
@@ -28,7 +40,7 @@ body {
     width: 500px;
     height: 500px;
 
-    margin: 10vh auto auto auto;
+    margin: 6vh auto auto auto;
 
     box-sizing: border-box;
 
