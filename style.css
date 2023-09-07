@@ -72,6 +72,8 @@ body {
     align-items: center;
     justify-content: center;
 
+    user-select: none;
+
 }
 
 .gridsquares:hover {
@@ -129,6 +131,8 @@ body {
 
     background-color: #30974c;
 
+    user-select: none;
+
 }
 
 #solveButton {
@@ -144,6 +148,8 @@ body {
     border-radius: 10px;
 
     background-color: #33427e;
+
+    user-select: none;
 
 }
 
